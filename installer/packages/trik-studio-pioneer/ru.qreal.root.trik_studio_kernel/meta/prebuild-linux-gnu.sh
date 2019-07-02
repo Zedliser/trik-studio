@@ -16,10 +16,12 @@ cp     $BIN_DIR/plugins/editors/librobotsMetamodel.so                   $PWD/../
 cp -pr $BIN_DIR/librobots-interpreter-core.so*                          $PWD/../data/lib/
 cp     $BIN_DIR/plugins/tools/librobots-plugin.so                       $PWD/../data/lib/plugins/tools/
 cp -pr $BIN_DIR/librobots-2d-model.so*                                  $PWD/../data/lib/
+cp -pr $BIN_DIR/libBox2D.so*                                            $PWD/../data/lib/
 cp -pr $BIN_DIR/librobots-generator-base.so*                            $PWD/../data/lib/
 cp -pr $BIN_DIR/librobots-kit-base.so*                                  $PWD/../data/lib/
 cp -pr $BIN_DIR/librobots-utils.so*                                     $PWD/../data/lib/
 cp -pr $BIN_DIR/libqextserialport.so*                                   $PWD/../data/lib/
+mv     $PWD/../data/externalToolsConfig                                 $PWD/../data/bin/externalToolsConfig
 
 # Cleaning up prebuild-common.sh results...
 rm -rf $PWD/../data/plugins/
